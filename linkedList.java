@@ -34,6 +34,30 @@ public class linkedList {
         // Check if the list contains "Java"
         System.out.println(list.contains("Java"));
 
-        
+        // returns the element at the specified position in this list
+        System.out.println(list.get(2));
+
+        // returns the first element in this list.
+        System.out.println(list.getFirst());
+
+        // returns the last element in this list
+        System.out.println(list.getLast());
+
+        // returns the index of the first occurrence of the specified element in this list, or -1 if not contains
+        System.out.println(list.indexOf("Java"));
+
+        // returns the index of the last occurrence of the specified element in this list, or -1 if not contains
+        System.out.println(list.lastIndexOf("Hemanth"));
+
+        System.out.println(list);
+        list.pop(); // pops first element in the list
+        list.removeLast(); // removes element at last
+        list.remove(); // same as pop
+        System.out.println(list);
+
+        list.push("one");
+        System.out.println(list); // same as add but it will add from front
+
+
     }
 }
